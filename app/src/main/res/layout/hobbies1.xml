@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6750A4"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobby Selector"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Hobby Selection Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Hobby:"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingBottom="10dp"
+                android:textStyle="bold" />
+
+            <!-- Hobby 1: Sports -->
+
+            <ImageView
+                android:id="@+id/image_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginBottom="3dp"
+                android:contentDescription="Sports Image"
+                android:src="@drawable/sports_image" />
+
+            <Button
+                android:id="@+id/btn_sports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#BB86FC"
+                android:textColor="#FFFFFF" />
+
+            <!-- Hobby 2: Cooking -->
+            <ImageView
+                android:id="@+id/image_cooking"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/cooking"
+                android:contentDescription="Cooking Image"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_cooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cooking"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#BB86FC"
+                android:textColor="#FFFFFF" />
+
+            <!-- Hobby 3: Traveling -->
+            <ImageView
+                android:id="@+id/image_traveling"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/traveling_image"
+                android:contentDescription="Traveling Image"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_traveling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traveling"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#BB86FC"
+                android:textColor="#FFFFFF" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

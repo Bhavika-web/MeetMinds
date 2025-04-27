@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Header: Fixed Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6750A4"
+        android:elevation="4dp"
+        android:padding="10dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:contentDescription="Go Back"
+            android:src="@drawable/backarrow" />
+
+        <!-- Name of the person -->
+        <TextView
+            android:id="@+id/chat_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Person's Name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Voice Call Icon -->
+        <ImageView
+            android:id="@+id/voice_call_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Voice Call"
+            android:src="@drawable/video_call" />
+
+        <!-- Video Call Icon -->
+        <ImageView
+            android:id="@+id/video_call_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:contentDescription="Video Call"
+            android:src="@drawable/callimg" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Message Area: Scrollable -->
+    <ScrollView
+        android:id="@+id/scrollable_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:contentDescription="Scrollable area showing messages">
+
+        <LinearLayout
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:contentDescription="Messages">
+
+            <!-- Example of a TextView -->
+            <TextView
+                android:id="@+id/message1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello, how are you?"
+                android:contentDescription="Message content: Hello, how are you?" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer: Input and Send Button -->
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#F2F2F2">
+
+        <!-- Input Field -->
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textMultiLine" />
+
+        <!-- Send Button -->
+        <ImageView
+            android:id="@+id/send_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_send"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Send" />
+    </LinearLayout>
+</LinearLayout>

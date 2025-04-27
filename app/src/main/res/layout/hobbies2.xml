@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6750A4"
+        android:padding="10dp">
+
+        <!-- Back Arrow Icon -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/backarrow"
+            android:contentDescription="Back Arrow"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Header Title -->
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Sport"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Sport Selection Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cricket Section -->
+            <ImageView
+                android:id="@+id/image_cricket"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Cricket Image"
+                android:src="@drawable/cricket_image" />
+
+            <Button
+                android:id="@+id/btn_cricket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#BB86FC"
+                android:text="Cricket"
+                android:textColor="#FFFFFF" />
+
+            <!-- Badminton Section -->
+            <ImageView
+                android:id="@+id/image_badminton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Badminton Image"
+                android:src="@drawable/badminton_image" />
+
+            <Button
+                android:id="@+id/btn_badminton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#BB86FC"
+                android:text="Badminton"
+                android:textColor="#FFFFFF" />
+
+            <!-- Tennis Section -->
+            <ImageView
+                android:id="@+id/image_tennis"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Tennis Image"
+                android:src="@drawable/tennis_image" />
+
+            <Button
+                android:id="@+id/btn_tennis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#BB86FC"
+                android:text="Tennis"
+                android:textColor="#FFFFFF" />
+
+            <!-- Basketball Section -->
+            <ImageView
+                android:id="@+id/image_basketball"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Basketball Image"
+                android:src="@drawable/basketball_image" />
+
+            <Button
+                android:id="@+id/btn_basketball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#BB86FC"
+                android:text="Basketball"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
